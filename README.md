@@ -48,6 +48,42 @@ Antes de instalar la aplicación, necesitas tener configurado tu entorno con:
 
 PHP versión 8 o superior
 
+Pasos de Instalación
+
+Clonar el repositorio:
+git clone https://github.com/tu-usuario/tu-repositorio.git
+cd tu-repositorio
+Instalar dependencias:
+composer install
+npm install
+Configurar el entorno:
+Copiar el archivo .env.example y renombrarlo a .env.
+Configurar la conexión a la base de datos en .env:
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=root
+DB_USERNAME=usuario
+DB_PASSWORD=
+Generar clave de aplicación:
+php artisan key:generate
+Ejecutar migraciones y seeders:
+php artisan migrate --seed
+Levantar el servidor:
+php artisan serve
+Configuración del Frontend
+
+Acceder al directorio del frontend
+cd frontend
+Ejecutar la aplicación:
+npm start
+Uso de la Aplicación
+
+Acceder a http://localhost:8000 para el backend.
+Acceder a http://localhost:4200 para la interfaz de usuario.
+Registrar un usuario y recibir un correo de confirmación.
+Gestionar los usuarios con las opciones CRUD disponibles.
+
 Composer (administrador de dependencias PHP)
 
 MySQL o MariaDB
